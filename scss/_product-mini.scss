@@ -1,0 +1,254 @@
+.section{
+    position: relative;
+    .bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -100;
+        top: 0;
+        left: 0;
+    }
+    .section-inner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 35px !important;
+        padding-top:100px !important;
+        .section-header{
+            margin-bottom: 0 !important;
+            color: $color;
+            font-family: 'rezvan';
+            font-weight: lighter;
+            font-size: 40px;
+            display: block;
+            span{
+                font-family: sans-serif !important;
+            }
+        }
+        .section-header-light{
+          color: #fff;
+          font-family: 'rezvan';
+          font-weight: lighter;
+          font-size: 40px;
+          display: block;
+          span{
+              font-family: sans-serif !important;
+          }
+        }
+        .post-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+            .single-post{
+                width: 310px;
+                height: 450px;
+                background-color: #f8f8f8;
+                border-radius: $radius;
+                box-shadow:$shadow; 
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 15px;
+                overflow: hidden;
+                transition: $transition;
+                .single-post-img{
+                    width: 230px;
+                    height: 230px;
+                    border-radius: 50%;
+                    border: $border;
+                    position: relative;
+                    overflow: hidden;
+                    .first{
+                        width: 100%;
+                        height: 100%;
+                        transition: $transition;
+                        border-radius: 50%;
+                    }
+                    .second{
+                        position: absolute;
+                        z-index: 10000;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        transform: translateX(100%);
+                        transition: $transition;
+                        border-radius: 50%;
+
+                    }
+                }
+                .single-post-body{
+                    padding: 10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .post-title{
+                        font-family: 'rezvan';
+                        color: $color;
+                    }
+                    .post-content{
+                        text-align: justify;
+                        font-family: 'IRsans';
+                        font-size: 13px;
+                    }
+                    .post-btn{
+                        width: 100px;
+                        height: 35px;
+                        background-color: $pcolor;
+                        color: #fff;
+                        font-family: 'rezvan';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: $radius-btn;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: $shadow;
+                        font-weight: bold;
+                        span{
+                            display: block;
+                            position: absolute;
+                            z-index: 9 !important;
+                        }
+                        &::after{
+                            content: 'ادامه مطلب';
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            background-color:#1B1462;
+                            position: absolute;
+                            top: 0;
+                            right: -100%;
+                            transition: $transition;
+                            z-index: 10;
+                            border-radius: $radius-btn;
+
+                        }
+                        &:hover::after{
+                         right: 0;
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    }
+                }
+            }
+            .single-post:hover .single-post-img .first{
+                transform: translateX(-100%);
+            }
+            .single-post:hover .single-post-img .second{
+                transform: translateX(0);
+            }
+            .single-post:hover{
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+        }
+        .section-footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .see-more{
+                width: 100px;
+                height: 35px;
+                background-color: #fff;
+                color: $color;
+                font-family: 'rezvan';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $radius-btn;
+                position: relative;
+                overflow: hidden;
+                font-weight: bold;
+                margin-top: 50px;
+                box-shadow: $shadow;
+                span{
+                    display: block;
+                    position: absolute;
+                    z-index: 9 !important;
+                }
+                &::after{
+                    content: 'مشاهده بیشتر';
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#ccc;
+                    color: $color;
+                    position: absolute;
+                    top: 0;
+                    right: -100%;
+                    transition: $transition;
+                    z-index: 10;
+                    border-radius: $radius-btn;
+
+                }
+                &:hover::after{
+                 right: 0;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+            .see-more-dark{
+                width: 100px;
+                height: 35px;
+                background-color: $pcolor;
+                color: #fff;
+                font-family: 'rezvan';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $radius-btn;
+                position: relative;
+                overflow: hidden;
+                font-weight: bold;
+                margin-top: 50px;
+                box-shadow: $shadow;
+                span{
+                    display: block;
+                    position: absolute;
+                    z-index: 9 !important;
+                }
+                &::after{
+                    content: 'مشاهده بیشتر';
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#1B1462;
+                    color: #fff;
+                    position: absolute;
+                    top: 0;
+                    right: -100%;
+                    transition: $transition;
+                    z-index: 10;
+                    border-radius: $radius-btn;
+
+                }
+                &:hover::after{
+                 right: 0;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+        }
+    }
+}

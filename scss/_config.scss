@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'IRSans';
+    src: url('../fonts/IRANSans/woff2/IRANSansWeb.woff2') format('woff2'), 
+   /* Super Modern Browsers */
+    url('../fonts/IRANSans/woff/IRANSansWeb.woff') format('woff'), 
+   /* Pretty Modern Browsers */
+    url('../fonts/IRANSans/ttf/IRANSansWeb.ttf') format('truetype');
+   /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'IRSans';
+    src: url('../fonts/IRANSans/woff2/IRANSansWeb\(FaNum\)_Bold.woff2') format('woff2'), 
+   /* Super Modern Browsers */
+    url('../fonts/IRANSans/woff/IRANSansWeb\(FaNum\)_Bold.woff') format('woff'), 
+   /* Pretty Modern Browsers */
+    url('../fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Bold.ttf') format('truetype');
+   /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'IRSans';
+    src: url('../fonts/IRANSans/woff2/IRANSansWeb\(FaNum\)_Light.woff2') format('woff2'), 
+   /* Super Modern Browsers */
+    url('../fonts/IRANSans/woff/IRANSansWeb\(FaNum\)_Light.woff') format('woff'), 
+   /* Pretty Modern Browsers */
+    url('../fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Light.ttf') format('truetype');
+   /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'rezvan';
+    src: url('../fonts/Rezvan.ttf') format('woff2');
+   
+    font-style: normal;
+    font-weight: lighter;
+}
+*{
+    outline: none !important;
+}
+a{
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+html body{
+    font-family: 'IRSans';
+    font-weight: 100;
+    font-size: 14px;
+    direction: rtl !important;
+    text-align: right !important;
+    padding: 0;
+    margin:0;
+}
+li{
+    list-style-type: none !important;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+
+}
+
+input[type=number]{
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+}

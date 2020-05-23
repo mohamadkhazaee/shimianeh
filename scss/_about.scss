@@ -1,0 +1,85 @@
+.section{
+    position: relative;
+    .bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -100;
+        top: 0;
+        left: 0;
+    }
+    .section-inner{
+        .section-header{
+            margin-bottom: 0 !important;
+            color: $color;
+            font-family: 'rezvan';
+            font-weight: lighter;
+            font-size: 40px;
+            display: block;
+            span{
+                font-family: sans-serif !important;
+            }
+        }
+        .about-section{
+            margin: 15px 0;
+            padding: 10px; 
+            width: auto !important;
+            height: auto;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: $radius;
+            box-shadow: $shadow;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: $shadow;
+            transition: $transition;
+                &:hover{
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+            .about-logo{
+                width: 120px;
+                height: 80px;
+                margin-bottom: 15px;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        .about-items{
+            margin-bottom: 15px !important;
+            width: auto !important;
+            height: auto;
+            max-width: 1000px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .about-item{
+                padding: 15px;
+                width: 100%;
+                margin-bottom: 15px;
+                height: 150px;
+                background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                border-radius: $radius;
+                box-shadow: $shadow;
+                transition: $transition;
+                &:hover{
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+                h5{
+                    font-family: 'rezvan';
+                    width: 100%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

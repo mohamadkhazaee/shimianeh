@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>SVG/item-logo-telegram-silhouette</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="58.2741085%" y1="41.0446454%" x2="68.1513255%" y2="92.9288428%" id="linearGradient-1">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="66%" y1="43.7%" x2="85.1%" y2="80.2%" id="linearGradient-2">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-260.000000, -479.000000)" id="Telegram/Silhouette">
+            <g transform="translate(41.000000, 35.000000)">
+                <g transform="translate(219.000000, 444.000000)">
+                    <g id="Telegram_logo">
+                        <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="12" cy="12" r="12"></circle>
+                        <path d="M9.8,17.5 C9.4112,17.5 9.4773,17.3532 9.3432,16.983 L8.2,13.2207 L17,8" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                        <path d="M9.8,17.5 C10.1,17.5 10.2325,17.3628 10.4,17.2 L12,15.6442 L10.0042,14.4407" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                        <path d="M10.004,14.441 L14.84,18.0139 C15.3919,18.3184 15.7901,18.1607 15.9276,17.5016 L17.8961,8.2253 C18.0976,7.4173 17.5881,7.0507 17.0601,7.2904 L5.5011,11.7475 C4.7121,12.064 4.7168,12.5042 5.3573,12.7003 L8.3236,13.6262 L15.1909,9.2937 C15.5151,9.0971 15.8127,9.2027 15.5685,9.4195" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>SVG/ic-chevron-left-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.29289322,0.292893219 C6.68341751,-0.0976310729 7.31658249,-0.0976310729 7.70710678,0.292893219 C8.06759074,0.65337718 8.09532028,1.22060824 7.79029539,1.61289944 L7.70710678,1.70710678 L2.415,7 L7.70710678,12.2928932 C8.06759074,12.6533772 8.09532028,13.2206082 7.79029539,13.6128994 L7.70710678,13.7071068 C7.34662282,14.0675907 6.77939176,14.0953203 6.38710056,13.7902954 L6.29289322,13.7071068 L0.292893219,7.70710678 C-0.0675907428,7.34662282 -0.0953202783,6.77939176 0.209704612,6.38710056 L0.292893219,6.29289322 L6.29289322,0.292893219 Z" id="path-1"></path>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-43.000000, -381.000000)" id="Icon/Chevron/Left">
+            <g transform="translate(41.000000, 35.000000)">
+                <g transform="translate(2.000000, 346.000000)">
+                    <g id="Rectangle" transform="translate(7.000000, 5.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D7181E" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <rect fill="#444444" mask="url(#mask-2)" x="-7" y="-5" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

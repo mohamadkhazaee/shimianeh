@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>SVG/ic-chevron-left-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.5753788,2.0753788 C5.30904884,-0.658291245 9.74120369,-0.658291245 12.4748737,2.0753788 C14.94202,4.54252501 15.1825586,8.39310782 13.1964896,11.1300151 L17.5002738,15.434755 C17.8907981,15.8252793 17.8907981,16.4584443 17.5002738,16.8489686 C17.1376441,17.2115983 16.5657988,17.2375004 16.1732811,16.9266749 L16.0860603,16.8489686 L11.8035015,12.5664425 C9.05790304,14.6918019 5.09511743,14.4946124 2.5753788,11.9748737 C-0.158291245,9.24120369 -0.158291245,4.80904884 2.5753788,2.0753788 Z M11.0606602,3.48959236 C9.10803871,1.5369709 5.94221382,1.5369709 3.98959236,3.48959236 C2.0369709,5.44221382 2.0369709,8.60803871 3.98959236,10.5606602 C5.94221382,12.5132816 9.10803871,12.5132816 11.0606602,10.5606602 C13.0132816,8.60803871 13.0132816,5.44221382 11.0606602,3.48959236 Z" id="path-1"></path>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-43.000000, -671.000000)" id="Icon/Search">
+            <g transform="translate(41.000000, 35.000000)">
+                <g transform="translate(2.000000, 636.000000)">
+                    <g id="Rectangle" transform="translate(3.000000, 4.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#979797" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <rect fill="#444444" mask="url(#mask-2)" x="-3" y="-4" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

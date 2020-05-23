@@ -1,0 +1,30 @@
+@import 'config.scss';
+@import 'variables.scss';
+@import 'product-mini.scss';
+@import 'slider.scss';
+@import 'header.scss';
+@import 'customers-page.scss';
+@import  'about.scss';
+@import 'contact.scss';
+@media screen and (max-width:779px){
+    main{
+        background-image: url('../img/bg-mobile.jpg');
+        background-repeat: repeat-y;
+        background-size: 100%;
+        background-attachment: scroll;
+    }
+}
+#fp-nav{
+    bottom: 20px !important;
+    top: auto !important;
+    ul{
+        li{
+            a{
+                span{
+                    background-color: #a3a3a3;
+                    box-shadow: $shadow;
+                }
+            }
+        }
+    }
+}

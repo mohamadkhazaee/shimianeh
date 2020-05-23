@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>SVG/ic-drop-down-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.15069607,0 L8.577226,0 C9.12951075,2.77151693e-17 9.577226,0.44771525 9.577226,1 C9.577226,1.23586078 9.49385736,1.46413063 9.34185084,1.64447564 L6.12858587,5.45678764 C5.77265181,5.87907828 5.14177603,5.93287091 4.71948539,5.57693685 C4.67609947,5.54036836 4.63590467,5.50017357 4.59933619,5.45678764 L1.38607122,1.64447564 C1.03013716,1.222185 1.08392979,0.591309225 1.50622043,0.235375158 C1.68656543,0.0833686329 1.91483529,-1.78717683e-16 2.15069607,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Sign-Up-&amp;-Login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-43.000000, -284.000000)">
+            <g transform="translate(41.000000, 35.000000)" id="Icon/Drop-Down">
+                <g transform="translate(2.000000, 249.000000)">
+                    <g id="Rectangle" transform="translate(7.000000, 9.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#ABABAB" xlink:href="#path-1"></use>
+                        <rect fill="#444444" mask="url(#mask-2)" x="-7" y="-9" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

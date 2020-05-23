@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>SVG/ic-play-circle-dark-bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-43.000000, -815.000000)" id="Icon/Play/Circle">
+            <g transform="translate(41.000000, 35.000000)">
+                <g transform="translate(2.000000, 780.000000)">
+                    <circle id="Oval" fill="#444444" opacity="0.300000012" cx="12" cy="12" r="12"></circle>
+                    <path d="M12.1520017,7.47000106 L7.1520017,15.4700011 C6.73572169,16.1360491 7.21456446,17 8,17 L18,17 C18.7854355,17 19.2642783,16.1360491 18.8479983,15.4700011 L13.8479983,7.47000106 C13.4563308,6.84333298 12.5436692,6.84333298 12.1520017,7.47000106 Z" id="Triangle" fill="#FFFFFF" transform="translate(13.000000, 12.000000) rotate(-270.000000) translate(-13.000000, -12.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
