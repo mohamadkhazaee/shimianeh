@@ -15,14 +15,13 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 35px !important;
-        padding-top:100px !important;
+        padding-top: 60px;
         .section-header{
             margin-bottom: 0 !important;
             color: $color;
             font-family: 'rezvan';
             font-weight: lighter;
-            font-size: 40px;
+            font-size: 35px !important;
             display: block;
             span{
                 font-family: sans-serif !important;
@@ -32,11 +31,11 @@
           color: #fff;
           font-family: 'rezvan';
           font-weight: lighter;
-          font-size: 40px;
-          display: block;
-          span{
-              font-family: sans-serif !important;
-          }
+            font-size: 35px !important;
+            display: block;
+            span{
+                font-family: sans-serif !important;
+            }
         }
         .post-container{
             display: flex;
@@ -46,10 +45,10 @@
             max-width: 1200px;
             justify-content: space-around;
             align-items: center;
-            margin-top: 50px;
+            margin: 40px 0;
             .single-post{
                 width: 310px;
-                height: 450px;
+                height: 420px;
                 background-color: #f8f8f8;
                 border-radius: $radius;
                 box-shadow:$shadow; 
@@ -174,7 +173,6 @@
                 position: relative;
                 overflow: hidden;
                 font-weight: bold;
-                margin-top: 50px;
                 box-shadow: $shadow;
                 span{
                     display: block;
@@ -218,7 +216,6 @@
                 position: relative;
                 overflow: hidden;
                 font-weight: bold;
-                margin-top: 50px;
                 box-shadow: $shadow;
                 span{
                     display: block;

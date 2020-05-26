@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    background-color: $pcolor;
+    color: #fff;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    .footer-col{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .footer-section{
+            .footer-title{
+                font-family: 'rezvan';
+                font-size: 20px;
+               
+            }
+            .footer-content{
+                font-family: 'IRsans';
+                font-size: 13px;
+                text-align: justify;
+            }
+        }
+    }
+}
