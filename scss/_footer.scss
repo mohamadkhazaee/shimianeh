@@ -9,6 +9,11 @@ footer{
         justify-content: center;
         align-items: flex-start;
         .footer-section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             .footer-title{
                 font-family: 'rezvan';
                 font-size: 20px;
@@ -18,6 +23,34 @@ footer{
                 font-family: 'IRsans';
                 font-size: 13px;
                 text-align: justify;
+            }
+            ul{
+                padding-right: 0 !important; 
+                li{
+                    list-style-type: disc !important;
+                    a{
+                        color: #fff;
+                        font-family: 'IRsans';
+                    }
+                }
+            }
+            .social-media{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                max-width: 300px !important;
+                svg{
+                    display: block;
+                    margin-top: 7px;
+                    width: 23px !important;
+                    height: 23px !important;
+                    transition: $transition;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
     }

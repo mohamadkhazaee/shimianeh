@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Assets" clip-path="url(#clip-path)">
+    <g id="Assets-2" data-name="Assets">
+      <g id="Telegram_Silhouette" data-name="Telegram/Silhouette" transform="translate(-260 -479)">
+        <g id="Group_85" data-name="Group 85" transform="translate(41 35)">
+          <g id="Group_84" data-name="Group 84" transform="translate(219 444)">
+            <g id="Telegram_logo">
+              <path id="Oval" d="M12,0A12,12,0,1,1,0,12,12,12,0,0,1,12,0Z" fill="#fff"/>
+              <path id="Path" d="M9.8,17.5c-.389,0-.323-.147-.457-.517L8.2,13.221,17,8" fill="#fff"/>
+              <path id="Path-2" data-name="Path" d="M9.8,17.5a.769.769,0,0,0,.6-.3L12,15.644l-2-1.2" fill="#0679e4"/>
+              <path id="Path-3" data-name="Path" d="M10,14.441l4.836,3.573c.552.3.95.147,1.088-.512L17.9,8.225c.2-.808-.308-1.175-.836-.935L5.5,11.748c-.789.316-.784.757-.144.953l2.966.926,6.867-4.332c.324-.2.622-.091.378.126" fill="#0679e4"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

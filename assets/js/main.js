@@ -112,6 +112,8 @@ if(userWidth <= 780){
     })
     $('.close-res-menu').click(function(){
         $('.main-nav').toggleClass('transform-res-menu')
+        $('.menu-overlay').toggleClass('toggle-main-overlay')
+
     })
     
 });
