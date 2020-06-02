@@ -27,7 +27,6 @@ footer{
             ul{
                 padding-right: 0 !important; 
                 li{
-                    list-style-type: disc !important;
                     a{
                         color: #fff;
                         font-family: 'IRsans';
@@ -53,5 +52,20 @@ footer{
                 }
             }
         }
+    }
+    .copyright{
+        width: 100%;
+        font-size: 11px;
+        color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:780px){
+    .footer-section{
+        align-items: flex-start !important;
+        
     }
 }

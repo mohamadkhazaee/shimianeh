@@ -29,17 +29,23 @@
             }
         }
         .item{
-            width: 100%;
-            height: 100%;
+            width: 100% !important;
+            height: 100% !important;
             img{
-                width: 100%;
-                height: 100%; 
+                width: 100% !important;
+                height: 100% !important; 
             }
         }
     }
 }
 @media screen and (max-width:779px){
-    .slider-page .fp-tableCell{
-        padding: 0 !important;
+    .slider-page{
+        margin-top: 55px !important;
+        .slider{
+            min-height: 200px !important;
+        }
+        .owl-dots{
+            display: none !important;
+        }
     }
 }

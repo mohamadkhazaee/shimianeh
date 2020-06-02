@@ -299,15 +299,19 @@ input[type=number] {
       .owl-container .slider .owl-dots .active span {
         background-color: #0679E4 !important; }
     .owl-container .slider .item {
-      width: 100%;
-      height: 100%; }
+      width: 100% !important;
+      height: 100% !important; }
       .owl-container .slider .item img {
-        width: 100%;
-        height: 100%; }
+        width: 100% !important;
+        height: 100% !important; }
 
 @media screen and (max-width: 779px) {
-  .slider-page .fp-tableCell {
-    padding: 0 !important; } }
+  .slider-page {
+    margin-top: 55px !important; }
+    .slider-page .slider {
+      min-height: 200px !important; }
+    .slider-page .owl-dots {
+      display: none !important; } }
 
 header {
   width: 100%;
@@ -540,9 +544,8 @@ header {
 .section .section-inner .user-captions {
   margin: 30px 0;
   padding: 20px 0px;
-  width: auto !important;
+  width: 800px;
   height: 280px;
-  max-width: 800px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -648,6 +651,32 @@ header {
         height: 100%;
         border-radius: 25px; }
 
+@media screen and (max-width: 800px) {
+  .user-captions {
+    width: 100% !important;
+    height: auto !important; }
+    .user-captions .owl-customer-caption {
+      width: 100% !important;
+      overflow: hidden; }
+      .user-captions .owl-customer-caption .owl-dots {
+        margin: 0 !important;
+        margin-top: 20px !important; }
+      .user-captions .owl-customer-caption .owl-nav {
+        display: none !important; }
+      .user-captions .owl-customer-caption .item {
+        width: 100% !important;
+        overflow: hidden !important;
+        padding: 10px; }
+        .user-captions .owl-customer-caption .item .user-caption-container {
+          flex-direction: column !important; }
+          .user-captions .owl-customer-caption .item .user-caption-container .user-caption-content {
+            order: 2;
+            width: auto !important; }
+            .user-captions .owl-customer-caption .item .user-caption-container .user-caption-content::after {
+              display: none !important; }
+          .user-captions .owl-customer-caption .item .user-caption-container .user-image {
+            order: 1; } }
+
 .section {
   position: relative; }
   .section .bg {
@@ -686,7 +715,6 @@ header {
     width: auto !important;
     height: auto;
     max-width: 1000px;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -710,6 +738,10 @@ header {
         font-family: 'rezvan';
         width: 100%;
         text-align: right; }
+
+@media screen and (max-width: 780px) {
+  .section .section-inner .about-items .about-item {
+    height: auto !important; } }
 
 .section {
   position: relative; }
@@ -835,6 +867,10 @@ header {
         width: 100% !important;
         border: none !important; }
 
+@media screen and (max-width: 780px) {
+  .contact-info, .contact-form {
+    margin: 15px 0 !important; } }
+
 footer {
   width: 100%;
   background-color: #0679E4;
@@ -860,11 +896,9 @@ footer {
         text-align: justify; }
       footer .footer-col .footer-section ul {
         padding-right: 0 !important; }
-        footer .footer-col .footer-section ul li {
-          list-style-type: disc !important; }
-          footer .footer-col .footer-section ul li a {
-            color: #fff;
-            font-family: 'IRsans'; }
+        footer .footer-col .footer-section ul li a {
+          color: #fff;
+          font-family: 'IRsans'; }
       footer .footer-col .footer-section .social-media {
         display: flex;
         justify-content: space-between;
@@ -879,6 +913,18 @@ footer {
           transition: all ease 0.4s; }
           footer .footer-col .footer-section .social-media svg:hover {
             transform: scale(1.2); }
+  footer .copyright {
+    width: 100%;
+    font-size: 11px;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; }
+
+@media screen and (max-width: 780px) {
+  .footer-section {
+    align-items: flex-start !important; } }
 
 @media screen and (max-width: 779px) {
   main {

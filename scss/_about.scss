@@ -42,7 +42,6 @@
             width: auto !important;
             height: auto;
             max-width: 1000px;
-            background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -70,5 +69,10 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width:780px){
+    .section .section-inner .about-items .about-item{
+        height: auto !important;
     }
 }

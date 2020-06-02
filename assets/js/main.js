@@ -1,23 +1,26 @@
 $(document).ready(function() {
+    let userWidth = $(document).innerWidth()
+    if(userWidth > 780){
+        $('.slider-page').addClass('fp-auto-height')
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            menu: '#menu',
+        lockAnchors: false,
+        navigation: true,
+        navigationPosition: 'right',
+        responsiveWidth:900,
+        responsiveHeight:650,
+        scrollingSpeed: 1500,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        
+        });
+    }
     
-    $('#fullpage').fullpage({
-        //options here
-        autoScrolling:true,
-        scrollHorizontally: true,
-        menu: '#menu',
-    lockAnchors: false,
-    anchors:['firstPage', 'secondPage'],
-    navigation: true,
-    navigationPosition: 'right',
-    responsiveWidth:900,
-    responsiveHeight:650,
-    scrollingSpeed: 1500,
-	autoScrolling: true,
-	fitToSection: true,
-	fitToSectionDelay: 1000,
-	scrollBar: false,
-    
-    });
     $('.slider').owlCarousel({
         loop:true,
         margin:10,
@@ -59,7 +62,7 @@ $(document).ready(function() {
         rtl:true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3
@@ -72,7 +75,6 @@ $(document).ready(function() {
 
 
 
-    let userWidth = $(document).innerWidth()
    if(userWidth <= 780){
       $('.main-menu li a svg').click(function(){
           $(this).parent().next().slideToggle();
@@ -86,10 +88,7 @@ if(userWidth <= 780){
     
 }
 
-if(userWidth <= 780){
-    $('.slider-page').remove()
-    
-}
+
 if(userWidth <= 780){
     $('.slider-paage .fp-tableCell').removeClass('fp-tableCell')
     
@@ -117,5 +116,6 @@ if(userWidth <= 780){
     })
     
 });
+
 
 
