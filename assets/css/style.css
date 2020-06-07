@@ -1408,6 +1408,9 @@ footer {
               .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu .dropdown-item {
                 text-align: right !important;
                 font-size: 14px !important; }
+                .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu .dropdown-item:hover {
+                  background-color: #0679E4;
+                  color: #fff; }
         .forms-page .section-inner .form-container2 form .form-content {
           width: 100%;
           border: 1px solid #ccc;

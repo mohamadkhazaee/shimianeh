@@ -223,6 +223,10 @@
                     .dropdown-item{
                         text-align: right !important;
                         font-size: 14px !important;
+                        &:hover{
+                            background-color: $pcolor;
+                            color: #fff;
+                        }
                     }
                 }
                }
