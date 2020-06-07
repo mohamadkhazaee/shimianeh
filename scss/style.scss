@@ -7,14 +7,16 @@
 @import  'about.scss';
 @import 'contact.scss';
 @import 'footer.scss';
+@import 'products.scss';
+@import 'forms.scss';
 @media screen and (max-width:779px){
-    main{
+    main , .products-page{
         background-image: url('../img/bg-mobile.jpg');
         background-repeat: repeat-y;
         background-size: 100%;
         background-attachment: scroll;
     }
-}
+} 
 #fp-nav{
     bottom: 20px !important;
     top: auto !important;

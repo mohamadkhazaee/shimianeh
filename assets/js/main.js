@@ -17,7 +17,6 @@ $(document).ready(function() {
         fitToSection: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
-        
         });
     }
     
@@ -115,6 +114,19 @@ if(userWidth <= 780){
 
     })
     
+    $('.internal-link').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
+
+
+
+    $('.make-new').click(()=>{
+        let cloned = $('.form-content').clone();
+        $('.form-btns').before(cloned)
+    })
 });
 
 
