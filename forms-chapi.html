@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- Owl Carousel Font awesome CSS -->
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+
 	<title></title>
 </head>
 <body >
@@ -102,61 +104,24 @@
 	</header>
                 <main >
 					<section class="forms-page">
-						<div class="section-inner container-fluid">
-							<h3 class="section-header">فرم سفارش محصولات خام</h3>
-                            <div class="form-container">
-                                    <div class="form-header">
-                                        <span>وقت بخیر (نام کاربر)</span>
-                                        <span>تاریخ : 22/6/99</span>
-                                    </div>
-                                    <form action="">
-                                        <div class="form-content">
-                                            <div class="form-row">
-                                                <span class="label">نام محصول</span>
-                                                <input type="text" name="" placeholder="نام را وارد کنید" class="row-input">
-                                            </div>
-                                            <div class="form-row">
-                                                <span class="label">ضخامت</span>
-                                                <input type="text" name="" placeholder="ضخامت را وارد کنید" class="row-input">
-                                            </div>
-                                            <div class="form-row">
-                                                <span class="label">عرض</span>
-                                                <input type="text" name="" placeholder="عرض را وارد کنید" class="row-input">
-                                            </div>
-                                            <div class="form-row">
-                                                <span class="label">مقدار</span>
-                                                <input type="text" name="" placeholder="مقدار را وارد کنید" class="row-input">
-                                            </div>
-                                             <div class="form-row">
-                                               <textarea placeholder="توضیحات مرتبط را وارد کنید" name=""></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="append-holder"></div>
-                                        <div class="form-btns">
-                                            <a href="#" class="form-btn make-new">ایجاد سفارش جدید   
-                                                    +
-                                            </a>
-                                            <a href="#" class="form-btn">
-                                                ارسال
-                                            </a>
-                                        </div>
-                                    </form>
-                            </div>
+						<div class="section-inner container-fluid">                           
                             <h3 class="section-header">فرم سفارش محصولات چاپی</h3>
                             <div class="form-container2">
                                 <div class="form-header">
                                     <span>وقت بخیر (نام کاربر)</span>
                                     <span>تاریخ : 22/6/99</span>
                                 </div>
-                                <form action="">
+                                <form action="data.php">
                                     <div class="chap-type">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                               نوع چاپ را مشخص کنید 
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item" href="#">فلکسو</a>
-                                              <a class="dropdown-item" href="#">هلیو</a>
+                                                <input style="display: none;" type="radio" id="flexo" name="chap-type" value="flexo">
+                                                <label for="flexo">فلکسو</label>
+                                                <input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+                                                <label for="helio">هلیو</label>
                                             </div>
                                           </div>                                    </div>
                                     <div class="form-content">
@@ -169,12 +134,31 @@
                                         </div>
                                         <div class="col-row">
                                             <span class="label-half">برش</span>
-                                            <input class="row-input-half" type="text" placeholder="نوع برش">
-                                        </div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    انتخاب کنید
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <input style="display: none;" id="have" type="radio"name="boresh" value="true">
+                                                    <label for="have">دارد</label>
+                                                    <input style="display: none;" id="havenot" type="radio" name="boresh" value="false">
+                                                    <label for="havenot">ندارد</label>
+                                                </div>
+                                              </div>
+                                            </div>
                                         <div class="col-row">
                                             <span class="label-half">دوخت</span>
-                                            <input class="row-input-half" type="text" placeholder="نوع دوخت">
-                                        </div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    انتخاب کنید
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <input style="display: none;" type="radio" id="have1" name="dookht" value="true">
+                                                    <label for="have1">دارد</label>
+                                                    <input style="display: none;" type="radio" id="havenot1" name="dookht" value="false">
+                                                    <label for="havenot1">ندارد</label>
+                                                </div>
+                                              </div>                                        </div>
                                         <div class="col-row">
                                             <span class="label-half">مقدار</span>
                                             <input class="row-input-half" type="text" placeholder="مقدار">
@@ -204,23 +188,23 @@
                                     </div>
                                     <div class="form-col">
                                         <div class="col-row">
-                                            <span class="label">مشخصات لمینت</span>
+                                            <span class="label">مشخصات لمینیت</span>
                                         </div>
                                         
                                      <div class="col-row">
-                                         <span class="label-half">جنس لمینت</span>
+                                         <span class="label-half">جنس لمینیت</span>
                                          <input class="row-input-half" type="text" placeholder=" جنس چاپ  ">
                                      </div>
                                      <div class="col-row">
-                                         <span class="label-half">عرض لمینت</span>
+                                         <span class="label-half">عرض لمینیت</span>
                                          <input class="row-input-half" type="text" placeholder="عرض چاپ  ">
                                      </div>
                                      <div class="col-row">
-                                         <span class="label-half">ضخامت لمینت</span>
+                                         <span class="label-half">ضخامت لمینیت</span>
                                          <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
                                      </div>
                                      <div class="col-row">
-                                        <span class="label-half">نوع لمینت</span>
+                                        <span class="label-half">نوع لمینیت</span>
                                         <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
                                     </div>
                                     </div>
@@ -252,11 +236,14 @@
                                     <div class="append-holder"></div>
                                     <div class="form-btns">
                                         <a href="#" class="form-btn make-new">ایجاد سفارش جدید   
-                                                +
+                                                <i class="mdi mdi-plus"></i>
                                         </a>
-                                        <a href="#" class="form-btn">
+                                        <button type="submit" href="#" class="form-btn">
                                             ارسال
-                                        </a>
+                                            <i class="mdi mdi-check-all"></i>
+
+                                        </button>
+
                                     </div>
                                 </form>
                         </div>

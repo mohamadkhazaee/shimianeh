@@ -75,8 +75,7 @@ input[type=number] {
     .section .section-inner .section-header {
       display: flex;
       justify-content: center;
-      align-items: center;
-      margin-bottom: 20px !important;
+      align-items: flex-end;
       color: #333;
       font-family: 'rezvan';
       font-weight: lighter;
@@ -87,6 +86,11 @@ input[type=number] {
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       background-color: #f7f7f7;
       display: block; }
+      .section .section-inner .section-header i {
+        color: #333;
+        text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.3);
+        font-size: 25px;
+        margin-left: 5px; }
       .section .section-inner .section-header span {
         font-family: sans-serif !important; }
     .section .section-inner .section-header-light {
@@ -162,7 +166,7 @@ input[type=number] {
             color: #fff;
             font-family: 'rezvan';
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             border-radius: 10px;
             position: relative;
@@ -173,24 +177,8 @@ input[type=number] {
               display: block;
               position: absolute;
               z-index: 9 !important; }
-            .section .section-inner .post-container .single-post .single-post-body .post-btn::after {
-              content: 'ادامه مطلب';
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              height: 100%;
-              background-color: #1B1462;
-              position: absolute;
-              top: 0;
-              right: -100%;
-              transition: all ease 0.4s;
-              z-index: 10;
-              border-radius: 10px; }
-            .section .section-inner .post-container .single-post .single-post-body .post-btn:hover::after {
-              right: 0;
-              width: 100%;
-              height: 100%; }
+            .section .section-inner .post-container .single-post .single-post-body .post-btn i {
+              font-size: 18px; }
       .section .section-inner .post-container .single-post:hover .single-post-img .first {
         transform: translateX(-100%); }
       .section .section-inner .post-container .single-post:hover .single-post-img .second {
@@ -209,7 +197,7 @@ input[type=number] {
         color: #333;
         font-family: 'rezvan';
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 10px;
         position: relative;
@@ -220,25 +208,8 @@ input[type=number] {
           display: block;
           position: absolute;
           z-index: 9 !important; }
-        .section .section-inner .section-footer .see-more::after {
-          content: 'مشاهده بیشتر';
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          background-color: #ccc;
-          color: #333;
-          position: absolute;
-          top: 0;
-          right: -100%;
-          transition: all ease 0.4s;
-          z-index: 10;
-          border-radius: 10px; }
-        .section .section-inner .section-footer .see-more:hover::after {
-          right: 0;
-          width: 100%;
-          height: 100%; }
+        .section .section-inner .section-footer .see-more i {
+          font-size: 18px; }
       .section .section-inner .section-footer .see-more-dark {
         width: 100px;
         height: 35px;
@@ -246,7 +217,7 @@ input[type=number] {
         color: #fff;
         font-family: 'rezvan';
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 10px;
         position: relative;
@@ -257,25 +228,8 @@ input[type=number] {
           display: block;
           position: absolute;
           z-index: 9 !important; }
-        .section .section-inner .section-footer .see-more-dark::after {
-          content: 'مشاهده بیشتر';
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          background-color: #1B1462;
-          color: #fff;
-          position: absolute;
-          top: 0;
-          right: -100%;
-          transition: all ease 0.4s;
-          z-index: 10;
-          border-radius: 10px; }
-        .section .section-inner .section-footer .see-more-dark:hover::after {
-          right: 0;
-          width: 100%;
-          height: 100%; }
+        .section .section-inner .section-footer .see-more-dark i {
+          font-size: 18px; }
 
 .owl-container {
   width: 100%; }
@@ -404,7 +358,8 @@ header {
           display: none;
           border-radius: 5px;
           border: 1px solid #f5f5f5;
-          padding-right: 0 !important; }
+          padding-right: 0 !important;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
           header .main-nav .main-menu li .sub-menu li {
             width: 100%;
             height: 40px;
@@ -717,7 +672,7 @@ header {
     max-width: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row; }
     .section .section-inner .about-items .about-item {
       padding: 15px;
@@ -738,6 +693,9 @@ header {
         font-family: 'rezvan';
         width: 100%;
         text-align: right; }
+        .section .section-inner .about-items .about-item h5 i {
+          color: #666;
+          font-size: 23px; }
 
 @media screen and (max-width: 780px) {
   .section .section-inner .about-items .about-item {
@@ -821,7 +779,9 @@ header {
         .section .section-inner .contact-section .contact-form .row .submit-btn {
           width: 100%;
           direction: ltr !important;
-          display: flex; }
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
           .section .section-inner .contact-section .contact-form .row .submit-btn button {
             width: 100px;
             height: 35px;
@@ -836,28 +796,8 @@ header {
             overflow: hidden;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             font-weight: bold; }
-            .section .section-inner .contact-section .contact-form .row .submit-btn button span {
-              display: block;
-              position: absolute;
-              z-index: 9 !important; }
-            .section .section-inner .contact-section .contact-form .row .submit-btn button::after {
-              content: 'ادامه مطلب';
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              height: 100%;
-              background-color: #1B1462;
-              position: absolute;
-              top: 0;
-              right: -100%;
-              transition: all ease 0.4s;
-              z-index: 10;
-              border-radius: 10px; }
-            .section .section-inner .contact-section .contact-form .row .submit-btn button:hover::after {
-              right: 0;
-              width: 100%;
-              height: 100%; }
+            .section .section-inner .contact-section .contact-form .row .submit-btn button i {
+              margin-right: 5px !important; }
     .section .section-inner .contact-section .contact-map {
       width: 100%;
       display: flex;
@@ -1283,9 +1223,9 @@ footer {
           width: 100%;
           max-width: 400px;
           border: 1px solid #ccc;
-          border-radius: 25px;
           margin-bottom: 20px;
-          overflow: hidden; }
+          overflow: hidden;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
           .forms-page .section-inner .form-container form .form-content .form-row {
             display: flex;
             width: 100%;
@@ -1349,6 +1289,8 @@ footer {
             overflow: hidden;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             font-weight: lighter; }
+            .forms-page .section-inner .form-container form .form-btns .form-btn i {
+              margin-right: 5px !important; }
     .forms-page .section-inner .form-container2 {
       overflow: hidden;
       width: auto;
@@ -1405,22 +1347,25 @@ footer {
                 margin-right: 10px; }
             .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu {
               width: 100% !important; }
-              .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu .dropdown-item {
+              .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 40px;
                 text-align: right !important;
                 font-size: 14px !important; }
-                .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu .dropdown-item:hover {
+                .forms-page .section-inner .form-container2 form .chap-type .dropdown .dropdown-menu label:hover {
                   background-color: #0679E4;
                   color: #fff; }
         .forms-page .section-inner .form-container2 form .form-content {
           width: 100%;
-          border: 1px solid #ccc;
-          border-radius: 25px;
           margin-bottom: 20px;
-          overflow: hidden;
           display: flex;
           justify-content: center;
           align-items: flex-start;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
           .forms-page .section-inner .form-container2 form .form-content .form-col {
             width: 100%;
             width: 250px;
@@ -1465,6 +1410,44 @@ footer {
                 background-color: #fafafa;
                 border-bottom: 1px solid #ccc !important;
                 font-size: 12px !important; }
+              .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown {
+                width: 50%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative; }
+                .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown .dropdown-toggle {
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  border-bottom: 1px solid #ccc !important;
+                  color: #97979D !important;
+                  left: 0;
+                  font-size: 12px !important;
+                  background-color: #fafafa;
+                  position: relative; }
+                  .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown .dropdown-toggle::after {
+                    margin-top: -30px;
+                    margin-right: 10px !important; }
+                .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown .dropdown-menu {
+                  width: 100% !important;
+                  padding: 0 !important;
+                  min-width: 100px !important; }
+                  .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown .dropdown-menu label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 30px;
+                    text-align: right !important;
+                    font-size: 12px !important;
+                    font-weight: lighter;
+                    margin-bottom: 0 !important; }
+                    .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .dropdown .dropdown-menu label:hover {
+                      background-color: #0679E4;
+                      color: #fff; }
               .forms-page .section-inner .form-container2 form .form-content .form-col .col-row .label-half {
                 width: 50%;
                 height: 50px;
@@ -1492,12 +1475,94 @@ footer {
             overflow: hidden;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             font-weight: lighter; }
+            .forms-page .section-inner .form-container2 form .form-btns .form-btn i {
+              margin-right: 5px !important; }
 
 @media screen and (max-width: 800px) {
   .form-container, .form-container2 {
     width: 100% !important; }
     .form-container .form-col, .form-container2 .form-col {
       width: 100% !important; } }
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(40deg, #020024 0%, #0679e4 69%, #00d4ff 100%); }
+  .login-page .login-container {
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all ease-in-out .2s;
+    padding: 20px 10px; }
+    .login-page .login-container:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .login-page .login-container form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .login-page .login-container form .login-header {
+        font-family: 'rezvan';
+        display: flex;
+        width: 290px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-size: 22px;
+        margin-bottom: 25px; }
+      .login-page .login-container form .login-input {
+        width: 290px;
+        height: 45px;
+        margin-bottom: 15px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        position: relative; }
+        .login-page .login-container form .login-input input {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          appearance: none;
+          background-color: transparent;
+          border: none !important;
+          text-align: center;
+          font-size: 13px; }
+        .login-page .login-container form .login-input i {
+          position: absolute;
+          left: 10px;
+          top: 3px;
+          width: 30px;
+          height: 30px;
+          display: block;
+          font-size: 25px;
+          color: #777; }
+      .login-page .login-container form .login-submit {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'rezvan';
+        color: #fff;
+        background-color: #0679E4;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 16px; }
+        .login-page .login-container form .login-submit i {
+          font-size: 20px;
+          color: #fff; }
+      .login-page .login-container form .forgotpassword {
+        color: #0679E4;
+        display: block;
+        font-size: 12px;
+        margin-top: 15px; }
 
 @media screen and (max-width: 779px) {
   main, .products-page {

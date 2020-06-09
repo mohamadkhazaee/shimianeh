@@ -88,6 +88,8 @@
                         width: 100%;
                         direction: ltr !important;
                         display: flex;
+                        justify-content: space-around;
+                        align-items: center;
                         button{
                             width: 100px;
                             height: 35px;
@@ -102,33 +104,12 @@
                             overflow: hidden;
                             box-shadow: $shadow;
                             font-weight: bold;
-                            span{
-                                display: block;
-                                position: absolute;
-                                z-index: 9 !important;
+                            i{
+                              
+                                    margin-right: 5px !important;
+                              
                             }
-                            &::after{
-                                content: 'ادامه مطلب';
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 100%;
-                                height: 100%;
-                                background-color:#1B1462;
-                                position: absolute;
-                                top: 0;
-                                right: -100%;
-                                transition: $transition;
-                                z-index: 10;
-                                border-radius: $radius-btn;
-    
-                            }
-                            &:hover::after{
-                             right: 0;
-                                width: 100%;
-                                height: 100%;
-                                
-                            }
+                          
                         }
                     }
                 }

@@ -127,6 +127,12 @@ if(userWidth <= 780){
         let cloned = $('.form-content').clone();
         $('.form-btns').before(cloned)
     })
+    $('.dropdown-menu label').click(function(){
+     //   $(this).prev().checked = true;
+        let innerText = $(this).html()
+        let toggleText = $(this).parent().parent().find('.dropdown-toggle').html(innerText)
+   
+    })
 });
 
 

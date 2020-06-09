@@ -44,7 +44,7 @@
             max-width: 1000px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: row;
             .about-item{
                 padding: 15px;
@@ -66,6 +66,10 @@
                     font-family: 'rezvan';
                     width: 100%;
                     text-align: right;
+                    i{
+                        color: #666;
+                        font-size: 23px;
+                    }
                 }
             }
         }
