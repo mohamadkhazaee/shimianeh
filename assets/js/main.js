@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     let userWidth = $(document).innerWidth()
     if(userWidth > 780){
         $('.slider-page').addClass('fp-auto-height')

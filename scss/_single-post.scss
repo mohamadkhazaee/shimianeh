@@ -1,0 +1,86 @@
+.single-post-page{
+    background: url('../img/bgpages.png');
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 55px !important;
+    .section-inner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 75px;
+        .product-gallery{
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            >.gallery-item{
+                    img{
+                        width: 200px !important;
+                        height: 200px !important;
+                        border-radius: $radius;
+                        padding: 10px;
+                    }
+            }
+        }
+        .section-header{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0 !important;
+            color: $color;
+            font-family: 'rezvan';
+            font-weight: lighter;
+            font-size: 30px !important;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #333;
+            box-shadow: $shadow;
+            background-color: #f7f7f7;
+            display: block;
+            span{
+                font-family: sans-serif !important;
+            }
+        }
+        .section-caption{
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: $radius;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: $shadow;
+            p{
+                font-family: "IRsans";
+                color: #333;
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+} 
+
+#lightbox{
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .lb-outerContainer{
+        order: 2;
+    }
+    .lb-dataContainer{
+        order: 1;
+        margin-bottom: 20px;
+        .lb-details{
+            display: none !important;
+        }
+    }
+}

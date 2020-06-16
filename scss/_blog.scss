@@ -1,0 +1,356 @@
+#blog-section{
+    .section-inner{
+        .blog-items-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            .blog-item{
+                width: 310px;
+                height: auto;
+                background-color: #f8f8f8;
+                border-radius: $radius;
+                box-shadow:$shadow; 
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 15px;
+                overflow: hidden;
+                transition: $transition;
+                .item-img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    border: $border;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .item-title{
+                    font-family: "IRsans";
+                    font-size: 13px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 30px;
+                    margin-bottom: 0 !important;
+                    padding-top: 8px;
+                }
+                .item-footer{
+                    border-top: 1px solid #f8f8f8;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    .footer-date{
+                        i{
+                            font-size: 22px;
+                            color:#999;
+                            
+                        }
+                        span{
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                    .item-btn{
+                        width: 100px;
+                        height: 35px;
+                        background-color: $pcolor;
+                        color: #fff;
+                        font-family: 'rezvan';
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-radius: $radius-btn;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: $shadow;
+                        font-weight: bold;
+                        span{
+                            display: block;
+                            position: absolute;
+                            z-index: 9 !important;
+                        }
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+.blog-single-page{
+    margin-top: 80px;
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    max-width: 1400px;
+    background-color: #fff;
+    border-radius: $radius;
+    
+    box-shadow: $shadow;
+    img{
+        overflow: hidden;
+        width: 100%;
+        border-radius: $radius;
+    }
+    .title{
+        font-size: 20px;
+        font-family: "IRsans";
+        color: #333;
+        margin: 20px 0 !important;
+        font-weight: bold;
+    }
+    p{
+        font-family: "IRsans";
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.blog-posts-page{
+    padding-top: 100px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    .blog-items-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        .blog-item{
+            width: 310px;
+            height: auto;
+            background-color: #f8f8f8;
+            border-radius: $radius;
+            box-shadow:$shadow; 
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px;
+            overflow: hidden;
+            transition: $transition;
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+            .item-img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: $border;
+                position: relative;
+                overflow: hidden;
+            }
+            .item-title{
+                font-family: "IRsans";
+                font-size: 13px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                height: 30px;
+                margin-bottom: 0 !important;
+                padding-top: 8px;
+            }
+            .item-footer{
+                border-top: 1px solid #f8f8f8;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                .footer-date{
+                    i{
+                        font-size: 22px;
+                        color:#999;
+                        
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+                .item-btn{
+                    width: 100px;
+                    height: 35px;
+                    background-color: $pcolor;
+                    color: #fff;
+                    font-family: 'rezvan';
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-radius: $radius-btn;
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: $shadow;
+                    font-weight: bold;
+                    span{
+                        display: block;
+                        position: absolute;
+                        z-index: 9 !important;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .section-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .see-more{
+            width: 100px;
+            height: 35px;
+            background-color: #fff;
+            color: $color;
+            font-family: 'rezvan';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radius-btn;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+            box-shadow: $shadow;
+            span{
+                display: block;
+                position: absolute;
+                z-index: 9 !important;
+            }
+            &::after{
+                content: 'مشاهده بیشتر';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-color:#ccc;
+                color: $color;
+                position: absolute;
+                top: 0;
+                right: -100%;
+                transition: $transition;
+                z-index: 10;
+                border-radius: $radius-btn;
+
+            }
+            &:hover::after{
+             right: 0;
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+        .load-more{
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border:5px solid $pcolor;
+            border-bottom: none;
+            border-radius: $radius;
+            border-right: none;
+            animation: rotate .5s infinite;
+            margin:20px 0;
+        }
+        @keyframes rotate {
+               0%{
+                   transform: rotate(0deg);
+               }
+               100%{
+                transform: rotate(360deg);
+               } 
+        }
+        .see-more-dark{
+            width: 100px;
+            height: 35px;
+            background-color: $pcolor;
+            color: #fff;
+            font-family: 'rezvan';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radius-btn;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+            box-shadow: $shadow;
+            span{
+                display: block;
+                position: absolute;
+                z-index: 9 !important;
+            }
+            &::after{
+                content: 'مشاهده بیشتر';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-color:#1B1462;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                right: -100%;
+                transition: $transition;
+                z-index: 10;
+                border-radius: $radius-btn;
+
+            }
+            &:hover::after{
+             right: 0;
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+    }
+}
