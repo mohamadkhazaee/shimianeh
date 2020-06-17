@@ -77,12 +77,57 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                .chap-type{
+                    width: 100%;
+                    margin-bottom: 30px;
+                   .dropdown{
+                    width: 180px;
+                    height: 45px;
+                    .dropdown-toggle{
+                        width: 100%;
+                        height: 100%;
+                        background-color: $pcolor;
+                        color: #fff;
+                        font-family: 'rezvan';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: $radius-btn;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: $shadow;
+                        font-weight: lighter;
+                        &::after{
+                            margin-top: 5px !important;
+                            margin-right: 10px;
+                        }
+                        
+                    }
+                    .dropdown-menu{
+                        width: 100% !important;
+                        label{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 30px;
+                            text-align: right !important;
+                            font-size: 14px !important;
+                            &:hover{
+                                background-color: $pcolor;
+                                color: #fff;
+                            }
+                        }
+                    }
+                   }
+                }
                 .form-content{
                     width: 100%;
                     max-width: 400px;
                     border: 1px solid #ccc;
+                    margin: 0 auto;
                     margin-bottom: 20px;
-                    overflow: hidden;
+                    margin-top: 20px;
                     box-shadow: $shadow;
                     .form-row{
                         display: flex;
@@ -162,7 +207,6 @@
             }
        }
        .form-container2{
-        overflow: hidden;
         width: auto;
         max-width: 1200px;
         box-shadow: $shadow;
@@ -228,7 +272,7 @@
                         justify-content: center;
                         align-items: center;
                         width: 100%;
-                        height: 40px;
+                        height: 30px;
                         text-align: right !important;
                         font-size: 14px !important;
                         &:hover{
@@ -344,7 +388,16 @@
                                 }
                             }
                         }
-
+                        .dropdown-full{
+                            width: 100% !important;
+                            background-color: #fff;
+                            .dropdown-toggle{
+                                background-color: #fff !important;
+                                font-weight: bold;
+                                color: #212529 !important;
+                                font-size: 14px !important;
+                            }
+                        }
                         .label-half{
                             width: 50%;
                             height: 50px;
@@ -352,6 +405,7 @@
                             justify-content: center;
                             align-items: center;
                             border-left: 1px solid #ccc;
+                            
                         }
                     }
                 }

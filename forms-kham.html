@@ -104,13 +104,28 @@
                 <main >
 					<section class="forms-page">
 						<div class="section-inner container-fluid">
-							<h3 class="section-header">فرم سفارش محصولات خام</h3>
                             <div class="form-container">
                                     <div class="form-header">
                                         <span>وقت بخیر (نام کاربر)</span>
                                         <span>تاریخ : 22/6/99</span>
                                     </div>
                                     <form action="">
+										<div class="chap-type">
+											<div class="dropdown">
+												<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												  نحوه پرداخت
+												</button>
+												<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+													<input style="display: none;" type="radio" id="flexo" name="chap-type" value="flexo">
+													<label for="flexo">واریز به حساب</label>
+													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<label for="helio">30 روزه</label>
+													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<label for="helio">60 روزه</label>
+													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<label for="helio">90 روزه</label>
+												</div>
+											  </div> 
                                         <div class="form-content">
                                             <div class="form-row">
                                                 <span class="label">نام محصول</span>

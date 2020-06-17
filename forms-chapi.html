@@ -88,12 +88,7 @@
 				<li>
 					<a href="#">درباره ما</a>
 				</li>
-				<li>
-					<a href="#"></a>
-				</li>
-				<li>
-					<a href="#"></a>
-				</li>
+				
 			</ul>
 		</nav>
 		<div class="header-logo-container">
@@ -105,7 +100,6 @@
                 <main >
 					<section class="forms-page">
 						<div class="section-inner container-fluid">                           
-                            <h3 class="section-header">فرم سفارش محصولات چاپی</h3>
                             <div class="form-container2">
                                 <div class="form-header">
                                     <span>وقت بخیر (نام کاربر)</span>
@@ -115,20 +109,34 @@
                                     <div class="chap-type">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              نوع چاپ را مشخص کنید 
+                                              نحوه پرداخت
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <input style="display: none;" type="radio" id="flexo" name="chap-type" value="flexo">
-                                                <label for="flexo">فلکسو</label>
+                                                <label for="flexo">واریز به حساب</label>
                                                 <input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
-                                                <label for="helio">هلیو</label>
+												<label for="helio">30 روزه</label>
+												<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+												<label for="helio">60 روزه</label>
+												<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+                                                <label for="helio">90 روزه</label>
                                             </div>
                                           </div>                                    </div>
                                     <div class="form-content">
                                        <div class="form-col">
                                            <div class="col-row">
-                                               <span class="label">نام محصول</span>
-                                           </div>
+											<div class="dropdown dropdown-full">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    نوع چاپ
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <input style="display: none;" id="have" type="radio"name="chap-type" value="flexo">
+                                                    <label for="have">فلکسو</label>
+                                                    <input style="display: none;" id="havenot" type="radio" name="chap-type" value="helio">
+                                                    <label for="havenot">هلیو</label>
+												</div>
+											  </div>      
+											    </div>
                                            <div class="col-row">
                                             <input class="row-input" type="text" placeholder="نام محصول را وارد کنید">
                                         </div>
@@ -179,12 +187,35 @@
                                      </div>
                                      <div class="col-row">
                                          <span class="label-half">ضخامت چاپ</span>
-                                         <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
+                                         <input class="row-input-half" type="text" placeholder="ضخامت چاپ">
                                      </div>
                                      <div class="col-row">
                                         <span class="label-half">تعداد رنگ</span>
-                                        <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
-                                    </div>
+										<div class="dropdown">
+											<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												انتخاب کنید
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<input style="display: none;" type="radio" id="have1" name="color" value="1">
+												<label for="have1">1</label>
+												<input style="display: none;" type="radio" id="havenot1" name="color" value="2">
+												<label for="havenot1"> 2</label>
+												<input style="display: none;" type="radio" id="have1" name="color" value="3">
+												<label for="have1">3</label>
+												<input style="display: none;" type="radio" id="havenot1" name="color" value="4">
+												<label for="havenot1"> 4</label>
+												<input style="display: none;" type="radio" id="have1" name="color" value="5">
+												<label for="have1">5</label>
+												<input style="display: none;" type="radio" id="havenot1" name="color" value="6">
+												<label for="havenot1"> 6</label>
+												<input style="display: none;" type="radio" id="have1" name="color" value="7">
+												<label for="have1">7</label>
+												<input style="display: none;" type="radio" id="havenot1" name="color" value="8">
+												<label for="havenot1"> 8</label>
+
+											</div>
+										  </div>                               
+										      </div>
                                     </div>
                                     <div class="form-col">
                                         <div class="col-row">
@@ -193,20 +224,29 @@
                                         
                                      <div class="col-row">
                                          <span class="label-half">جنس لمینیت</span>
-                                         <input class="row-input-half" type="text" placeholder=" جنس چاپ  ">
+                                         <input class="row-input-half" type="text" placeholder=" جنس لمینیت  ">
                                      </div>
                                      <div class="col-row">
                                          <span class="label-half">عرض لمینیت</span>
-                                         <input class="row-input-half" type="text" placeholder="عرض چاپ  ">
+                                         <input class="row-input-half" type="text" placeholder="عرض لمینیت  ">
                                      </div>
                                      <div class="col-row">
                                          <span class="label-half">ضخامت لمینیت</span>
-                                         <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
+                                         <input class="row-input-half" type="text" placeholder="ضخامت لمینیت">
                                      </div>
                                      <div class="col-row">
                                         <span class="label-half">نوع لمینیت</span>
-                                        <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
-                                    </div>
+										<div class="dropdown">
+											<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												انتخاب کنید
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<input style="display: none;" type="radio" id="have1" name="dookht" value="true">
+												<label for="have1">حلالی</label>
+												<input style="display: none;" type="radio" id="havenot1" name="dookht" value="false">
+												<label for="havenot1">غیر حلالی</label>
+											</div>
+										  </div>                                    </div>
                                     </div>
                                     <div class="form-col">
                                         <div class="col-row">
@@ -215,19 +255,19 @@
                                         
                                      <div class="col-row">
                                          <span class="label-half">جهت چاپ</span>
-                                         <input class="row-input-half" type="text" placeholder=" جنس چاپ  ">
+                                         <input class="row-input-half" type="text" placeholder=" جهت چاپ  ">
                                      </div>
                                      <div class="col-row">
                                          <span class="label-half">سایز سیلندر</span>
-                                         <input class="row-input-half" type="text" placeholder="عرض چاپ  ">
+                                         <input class="row-input-half" type="text" placeholder="سایز سیلندر">
                                      </div>
                                      <div class="col-row">
                                          <span class="label-half">عرض برش</span>
-                                         <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
+                                         <input class="row-input-half" type="text" placeholder="عرض برش">
                                      </div>
                                      <div class="col-row">
                                         <span class="label-half">فاصله فتوسل</span>
-                                        <input class="row-input-half" type="text" placeholder="تعداد رنگ  ">
+                                        <input class="row-input-half" type="text" placeholder="فاصله فتوسل">
                                     </div>
                                     </div>
                                     
