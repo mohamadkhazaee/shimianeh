@@ -62,6 +62,20 @@
                     color: #777;
                 }
             }
+            .login-remember-me{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                label{
+                    margin-bottom: 0 !important;
+                }
+                input{
+                    margin-left: 10px;
+                    border: 1px solid $pcolor !important;
+                    appearance: none !important;
+                }
+            }
             .login-submit{
                 width: 150px;
                 height: 40px;

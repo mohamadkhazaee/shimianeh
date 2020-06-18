@@ -16,11 +16,12 @@
             justify-content: flex-start;
             align-items: flex-start;
             .contact-info{
-                margin: 15px;
+                margin: 15px 0;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                align-items: center;
                 background-color: #fff;
                 padding: 15px;
                 box-shadow: $shadow;
@@ -30,15 +31,18 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
-                    align-items: center;
-                    height: 45px;
+                    align-items: flex-end;
+                    min-height: 35px;
                     .contact-svg{
                         display: block;
                         margin-left: 10px;
-                        svg{
+                    
                             width: 35px;
                             height: 35px;
-                        }
+                            i{
+                                font-size: 25px;
+                                color: $pcolor;
+                            }
                     }
                     .contact-content{
                         display: block; 
@@ -47,14 +51,15 @@
             }
             .contact-form{
                 display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
+                justify-content: center;
+                align-items:center;
                 width: 100%;
-                margin: 15px;
+                margin: 0;
                 flex-direction: column;
                 background-color: #fff;
                 padding: 15px;
                 min-height: 300px;
+                height: auto !important;
                 box-shadow: $shadow;
                 border-radius: $radius;
                 .row{
@@ -63,7 +68,7 @@
                     .form-item{
                         width: 100%;
                         min-height: 40px;
-                        margin-bottom: 15px !important;
+                        margin-bottom: 10px !important;
                         input , textarea{
                             display: block;
                             width: 100%;
@@ -71,11 +76,11 @@
                             appearance: none;
                             -webkit-appearance: none;
                             -moz-appearance: none;
-                            border: 1px solid #f3f3f3;
+                            border: 1px solid #f0f0f0;
                             border-radius: $radius;
                             -ms-progress-appearance: none;
                             padding: 5px 10px;
-                            margin-bottom: 25px;
+                            margin-bottom: 15px;
                             background-color: #fbfbfb;
                         }
                         textarea{

@@ -30,12 +30,16 @@ header{
             justify-content: flex-start;
             align-items: center;
             height: 100%;
+            &:first-child{
+                display: none !important;
+            }
             li{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 height: 100%;
+               
                 a{
                     height: 100%;
                     display: flex;
@@ -58,11 +62,11 @@ header{
 
                         }
                     }
-                    margin-left: 25px;
+                    margin-left: 15px;
                     font-weight: bold;
                     font-family: 'rezvan';
                     color: #fff;
-                    font-size: 16px;
+                    font-size: 15px;
                     font-weight: lighter;
                     position: relative;
                     transition: all ease .2s;
@@ -138,8 +142,37 @@ header{
     .header-logo-container{
         height: 100%;
         overflow: hidden;
-        img{
-            height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media screen and (min-width:780px){
+            .desktop-login-btn{
+                color: #fff;
+                font-family: "rezvan";
+                width: 100px;
+                border: 1px solid #fff;
+                height: 30px;
+                border-radius: $radius;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    background-color: #fff;
+                    color: #666;
+                }
+                .mdi{
+                    font-size: 20px;
+                }
+            }
+        }
+        .main-logo{
+            width: 120px;
+            img{
+                width: 120px;
+                height: 95%;
+            }
         }
     }
 }
@@ -201,6 +234,25 @@ header{
                 }
                 img{
                     width: 200px;
+                }
+                .responsive-login{
+                    color: #fff;
+                        font-family: "rezvan";
+                        width: 100px;
+                        border: 1px solid #fff;
+                        height: 30px;
+                        border-radius: $radius;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all ease-in-out .3s;
+                        &:hover{
+                            background-color: #fff;
+                            color: #666;
+                        }
+                        .mdi{
+                            font-size: 20px;
+                        }
                 }
             }
             position: fixed;

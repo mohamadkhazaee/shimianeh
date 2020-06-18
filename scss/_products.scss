@@ -1,10 +1,13 @@
 .products-page{
     @media screen and (min-width:768px){
         background: url('../img/bgpages.png');
-
+        background: url('../img/bgpages.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-top: 55px !important;
     }
-    background-size: cover;
-    background-attachment: scroll;
+   
     margin-top: 55px !important;
     .section-inner{
         width: 100%;
