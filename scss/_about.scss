@@ -75,6 +75,20 @@
         }
     }
 }
+.about-section-en{
+    direction: ltr !important;
+    .about-section{
+        text-align: left !important;
+        direction: ltr !important;
+    }
+    .about-item{
+        direction: ltr !important;
+        text-align: left !important;
+        h5{
+            text-align: left !important;
+        }
+    }
+}
 @media screen and (max-width:780px){
     .section .section-inner .about-items .about-item{
         height: auto !important;

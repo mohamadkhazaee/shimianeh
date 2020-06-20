@@ -350,6 +350,13 @@ header{
                     }
                     font-family: sans-serif !important;
                 }
+                .sub-menu{
+                    width: 100%;
+                    padding-left: 0 !important;
+                    >li{
+                        padding-left: 10px !important;
+                    }
+                }
             }
         }
     }

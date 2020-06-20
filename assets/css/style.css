@@ -238,9 +238,11 @@ input[type=number] {
         .section .section-inner .section-footer .see-more-dark i {
           font-size: 18px; }
 
-.bopp-section-en .post-container .single-post .single-post-body .post-btn {
-  font-size: 11px !important;
-  font-family: sans-serif; }
+.bopp-section-en, .material-section-en {
+  direction: ltr !important; }
+  .bopp-section-en .post-container .single-post .single-post-body .post-btn, .material-section-en .post-container .single-post .single-post-body .post-btn {
+    font-size: 11px !important;
+    font-family: sans-serif; }
 
 .owl-container {
   width: 100%; }
@@ -561,6 +563,11 @@ header {
         @media screen and (min-width: 779px) and (max-width: 990px) {
           .header-en .main-nav .main-menu > li > a {
             font-size: 10px !important; } }
+      .header-en .main-nav .main-menu > li .sub-menu {
+        width: 100%;
+        padding-left: 0 !important; }
+        .header-en .main-nav .main-menu > li .sub-menu > li {
+          padding-left: 10px !important; }
   @media screen and (max-width: 780px) {
     .header-en .main-nav {
       top: 0;
@@ -775,6 +782,17 @@ header {
           color: #666;
           font-size: 23px; }
 
+.about-section-en {
+  direction: ltr !important; }
+  .about-section-en .about-section {
+    text-align: left !important;
+    direction: ltr !important; }
+  .about-section-en .about-item {
+    direction: ltr !important;
+    text-align: left !important; }
+    .about-section-en .about-item h5 {
+      text-align: left !important; }
+
 @media screen and (max-width: 780px) {
   .section .section-inner .about-items .about-item {
     height: auto !important; } }
@@ -958,6 +976,9 @@ footer {
 @media screen and (max-width: 780px) {
   .footer-section {
     align-items: flex-start !important; } }
+
+.footer-en {
+  direction: ltr !important; }
 
 .products-page {
   margin-top: 55px !important; }
@@ -2046,6 +2067,14 @@ footer {
       z-index: 9 !important; }
     #blog-section .section-inner .section-footer .see-more-dark i {
       font-size: 18px; }
+
+.blog-section-en {
+  direction: ltr !important; }
+  .blog-section-en .blog-item .item-footer .footer-date {
+    font-family: sans-serif !important; }
+  .blog-section-en .blog-item .item-footer .item-btn {
+    font-size: 12px !important;
+    font-family: sans-serif !important; }
 
 @media screen and (min-width: 768px) {
   .blog-single-page-container {

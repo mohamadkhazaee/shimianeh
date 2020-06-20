@@ -213,7 +213,8 @@
 }
 
 
-.bopp-section-en{
+.bopp-section-en , .material-section-en{
+    direction: ltr !important;
     .post-container{
         .single-post{
             .single-post-body{

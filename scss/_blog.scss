@@ -141,7 +141,21 @@
         }
     }
 }
-
+.blog-section-en{
+    direction: ltr !important;
+    .blog-item{
+        .item-footer{
+            .footer-date{
+                font-family: sans-serif !important;
+              
+            }
+            .item-btn{
+                font-size: 12px !important;
+                font-family: sans-serif !important;
+            }
+        }
+    }
+}
 
 
 
