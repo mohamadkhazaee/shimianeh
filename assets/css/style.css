@@ -162,7 +162,10 @@ input[type=number] {
           .section .section-inner .post-container .single-post .single-post-body .post-content {
             text-align: justify;
             font-family: 'IRsans';
-            font-size: 13px; }
+            font-size: 13px;
+            display: block;
+            height: 60px !important;
+            overflow: hidden; }
           .section .section-inner .post-container .single-post .single-post-body .post-btn {
             width: 100px;
             height: 35px;
@@ -234,6 +237,10 @@ input[type=number] {
           z-index: 9 !important; }
         .section .section-inner .section-footer .see-more-dark i {
           font-size: 18px; }
+
+.bopp-section-en .post-container .single-post .single-post-body .post-btn {
+  font-size: 11px !important;
+  font-family: sans-serif; }
 
 .owl-container {
   width: 100%; }
@@ -540,6 +547,32 @@ header {
                 font-size: 16px; }
                 header .main-nav .main-menu li .sub-menu li a:hover {
                   color: #aaa !important; } }
+
+.header-en {
+  direction: ltr !important; }
+  .header-en .desktop-login-btn span {
+    margin-top: 4px !important; }
+  .header-en .main-nav {
+    direction: ltr !important; }
+    .header-en .main-nav .main-menu {
+      padding-left: 0 !important; }
+      .header-en .main-nav .main-menu > li > a {
+        font-family: sans-serif !important; }
+        @media screen and (min-width: 779px) and (max-width: 990px) {
+          .header-en .main-nav .main-menu > li > a {
+            font-size: 10px !important; } }
+  @media screen and (max-width: 780px) {
+    .header-en .main-nav {
+      top: 0;
+      left: 0 !important;
+      width: 100vw !important;
+      transform: translateX(-130%) !important; }
+      .header-en .main-nav .main-menu {
+        padding-left: 20px !important; }
+        .header-en .main-nav .main-menu .sub-menu {
+          padding-left: 10px !important; } }
+  .header-en .transform-res-menu {
+    transform: translateX(0) !important; }
 
 .section .section-inner .user-captions {
   margin: 30px 0;
@@ -1076,7 +1109,9 @@ footer {
           .products-page .section-inner .post-container .single-post .single-post-body .post-content {
             text-align: justify;
             font-family: 'IRsans';
-            font-size: 13px; }
+            font-size: 13px;
+            height: 60px !important;
+            overflow: hidden; }
           .products-page .section-inner .post-container .single-post .single-post-body .post-btn {
             width: 100px;
             height: 35px;
@@ -1844,7 +1879,9 @@ footer {
           .single-post-page .section-inner .post-container .single-post .single-post-body .post-content {
             text-align: justify;
             font-family: 'IRsans';
-            font-size: 13px; }
+            font-size: 13px;
+            height: 60px !important;
+            overflow: hidden; }
           .single-post-page .section-inner .post-container .single-post .single-post-body .post-btn {
             width: 100px;
             height: 35px;

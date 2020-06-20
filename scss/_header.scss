@@ -328,3 +328,52 @@ header{
         }
     }
 }
+
+
+
+.header-en{
+    direction: ltr !important;
+    
+    .desktop-login-btn{
+        span{
+            margin-top: 4px !important;
+        }
+    }
+    .main-nav{
+        direction: ltr !important;
+        .main-menu{
+            padding-left: 0 !important;
+            >li{
+                >a{
+                    @media screen and (min-width:779px) and (max-width:990px){
+                        font-size: 10px !important;
+                    }
+                    font-family: sans-serif !important;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:780px){
+        .main-nav{
+           
+            top: 0;
+            left: 0 !important;
+            width: 100vw !important;
+            transform: translateX(-130% ) !important;
+            .main-menu{
+                padding-left: 20px !important;
+                >li{
+                    >a{
+                        
+                    }
+                }
+                .sub-menu{
+                    padding-left: 10px !important;
+                }
+            }
+        }
+    }
+    .transform-res-menu{
+        transform: translateX(0) !important;
+    }
+}
