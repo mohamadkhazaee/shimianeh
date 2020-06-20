@@ -164,6 +164,51 @@
                             background-color: #fafafa;
                             font-size: 12px !important;
                         }
+                        .dropdown{
+                            width: 50%;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            .dropdown-toggle{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                color: #97979D !important;
+                                left: 0;
+                                font-size: 12px !important;
+                                background-color: #fafafa;
+                                position: relative;
+                                box-shadow: none !important;
+                                &::after{
+                                    margin-top: -30px;
+                                    margin-right: 10px !important;
+                                }
+                                
+                            }
+                            .dropdown-menu{
+                                width: 100% !important;
+                                padding: 0 !important;
+                                min-width: 100px !important;
+                                label{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    height: 30px;
+                                    text-align: right !important;
+                                    font-size: 12px !important;
+                                    font-weight: lighter;
+                                    margin-bottom: 0 !important;
+                                    &:hover{
+                                        background-color: $pcolor;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
                         textarea{
                             width: 100%;
                             padding: 10px;
@@ -256,7 +301,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-radius: $radius-btn;
                     position: relative;
                     overflow: hidden;
                     box-shadow: $shadow;
@@ -298,17 +342,19 @@
                     width: 100%;
                     width: 250px;
                     border-left: 1px solid #ccc;
-                    &:last-child{
-                        border-left: 0 !important;
+                    @media screen and (max-width:859px){
+                        border-right:1px solid #ccc ;
+                    }
+                    &:first-child{
+                        border-right:  1px solid #ccc;
                     }
                     .col-row{
                         display: flex;
                         width: 100%;
                         justify-content: center;
                         align-items: center;
-                        border-bottom: 1px solid #ccc;
                         height: 50px;
-                        
+                        border-bottom: 1px solid #ccc;
                        
                         .row-input{
                             display: flex;
@@ -318,15 +364,13 @@
                             -webkit-appearance: none;
                             -moz-appearance: none;
                             -moz-appearance: none;
-                            border: 0 !important;
                             width: 100%;
-                            height: 50px;
+                            height: 46px;
                             text-align: center;
                             background-color: transparent;
                             font-size: 12px !important;
                             background-color: #fafafa;
-                            border-bottom:1px solid #ccc !important;
-
+                            border: 0 !important;
                         }
                         .row-input-half{
                             display: flex;
@@ -336,18 +380,17 @@
                             -webkit-appearance: none;
                             -moz-appearance: none;
                             -moz-appearance: none;
-                            border: 0 !important;
                             width: 50%;
-                            height: 50px;
+                            height: 46px;
                             text-align: center;
                             background-color: #fafafa;
-                            border-bottom:1px solid #ccc !important;
                             font-size: 12px !important;
-                            
+                            border: 0 !important;
+                          
                         }
                         .dropdown{
                             width: 50%;
-                            height: 50px;
+                            height: 46px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -357,7 +400,6 @@
                                 height: 100%;
                                 position: absolute;
                                 top: 0;
-                                border-bottom:1px solid #ccc !important;
                                 color: #97979D !important;
                                 left: 0;
                                 font-size: 12px !important;

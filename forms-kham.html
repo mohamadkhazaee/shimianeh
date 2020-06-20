@@ -143,36 +143,52 @@
 												<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												  نحوه پرداخت
 												</button>
-												<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-													<input style="display: none;" type="radio" id="flexo" name="chap-type" value="flexo">
+												<div class="dropdown-menu" aria-labelledby="payment-type">
+													<input style="display: none;" type="radio" name="payment" value="variz">
 													<label for="flexo">واریز به حساب</label>
-													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<input style="display: none;" type="radio"  name="payment" value="30days">
 													<label for="helio">30 روزه</label>
-													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<input style="display: none;" type="radio"  name="payment" value="60days">
 													<label for="helio">60 روزه</label>
-													<input style="display: none;" type="radio" id="helio" name="chap-type" value="helio">
+													<input style="display: none;" type="radio"  name="payment" value="90days">
 													<label for="helio">90 روزه</label>
 												</div>
 											  </div> 
                                         <div class="form-content">
                                             <div class="form-row">
                                                 <span class="label">نام محصول</span>
-                                                <input type="text" name="" placeholder="نام را وارد کنید" class="row-input">
-                                            </div>
+												<div class="dropdown">
+													<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														انتخاب کنید
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<input style="display: none;" type="radio" id="have1" name="jens-chap" value="boppshafaf">
+														<label for="have1"> BOPP شفاف</label>
+														<input style="display: none;" type="radio" id="havenot1" name="jens-chap" value="boppsadafi">
+														<label for="havenot1"> BOPP صدفی</label>
+														<input style="display: none;" type="radio" id="have1" name="jens-chap" value="boppmat">
+														<label for="have1"> BOPP مات</label>
+														<input style="display: none;" type="radio" id="havenot1" name="jens-chap" value="boppemtalize">
+														<label for="havenot1"> BOPP متالایز</label>
+														
+														
+														
+													</div>
+												  </div>                                              </div>
                                             <div class="form-row">
                                                 <span class="label">ضخامت</span>
-                                                <input type="text" name="" placeholder="ضخامت را وارد کنید" class="row-input">
+                                                <input type="text" name="zekhamat" placeholder="میکرون" class="row-input" value="">
                                             </div>
                                             <div class="form-row">
                                                 <span class="label">عرض</span>
-                                                <input type="text" name="" placeholder="عرض را وارد کنید" class="row-input">
+                                                <input type="text" name="arz" placeholder="میلی متر" class="row-input" value="">
                                             </div>
                                             <div class="form-row">
                                                 <span class="label">مقدار</span>
-                                                <input type="text" name="" placeholder="مقدار را وارد کنید" class="row-input">
+                                                <input type="text" name="meghdar" placeholder="کیلوگرم" class="row-input" value="">
                                             </div>
                                              <div class="form-row">
-                                               <textarea placeholder="توضیحات مرتبط را وارد کنید" name=""></textarea>
+                                               <textarea placeholder="توضیحات مرتبط را وارد کنید" name="tozihat" payment></textarea>
                                             </div>
                                         </div>
                                         <div class="append-holder"></div>
@@ -180,7 +196,7 @@
                                             <a href="#" class="form-btn make-new">ایجاد سفارش جدید   
                                                     <i class="mdi mdi-plus"></i>
                                             </a>
-                                            <button href="#" class="form-btn">
+                                            <button type="submit" href="#" class="form-btn">
 												ارسال
 												<i class="mdi mdi-check-all"></i>
 

@@ -79,8 +79,8 @@
                 overflow: hidden;
                 transition: $transition;
                 .single-post-img{
-                    width: 230px;
-                    height: 230px;
+                    width: 220px;
+                    height: 220px;
                     border-radius: 50%;
                     border: $border;
                     position: relative;
@@ -96,8 +96,8 @@
                         z-index: 10000;
                         top: 0;
                         right: 0;
-                        width: 100%;
-                        height: 100%;
+                        width: 220px;
+                        height: 220px;
                         transform: translateX(100%);
                         transition: $transition;
                         border-radius: 50%;
