@@ -198,3 +198,28 @@
         }
     }
 }
+
+.single-post-page-en{
+    direction: ltr !important;
+    text-align: left !important;
+    .section-caption{
+        direction: ltr !important;
+    text-align: left !important;
+    p{
+        text-align: left;
+    }
+    }
+    .bopp-section-en , .material-section-en{
+        direction: ltr !important;
+    
+            .single-post{
+                .single-post-body{
+                    .post-btn{
+                        font-size: 11px !important;
+                        font-family: sans-serif;
+                    }
+                }
+            }
+        
+    }
+}

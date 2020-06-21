@@ -72,6 +72,7 @@
                 }
                 input{
                     margin-left: 10px;
+                    margin-right: 10px;
                     border: 1px solid $pcolor !important;
                     appearance: none !important;
                 }
@@ -101,5 +102,13 @@
                 margin-top: 15px;
             }
         }
+    }
+}
+.login-page-en{
+    direction: ltr !important;
+    text-align: left;
+    font-family: sans-serif !important;
+    .login-submit{
+        font-size: 11px !important;
     }
 }

@@ -182,6 +182,9 @@
         background-repeat: no-repeat;
         margin-top: 55px !important;
     }
+
+
+
     .blog-single-page{
     
    
@@ -303,7 +306,7 @@
                 height: 35px;
                 border-radius: $radius;
                 box-shadow: $shadow;
-                margin-left: 10px;
+                margin:0 10px;
             }
             a{
                 color: #333;
@@ -318,7 +321,15 @@
     }
 }
 
-
+.blog-single-page-container-en{
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: sans-serif !important;
+    p{
+        text-align: left !important;
+        font-family: sans-serif !important;
+    }
+}
 
 
 
@@ -471,29 +482,7 @@
                 position: absolute;
                 z-index: 9 !important;
             }
-            &::after{
-                content: 'مشاهده بیشتر';
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                background-color:#ccc;
-                color: $color;
-                position: absolute;
-                top: 0;
-                right: -100%;
-                transition: $transition;
-                z-index: 10;
-                border-radius: $radius-btn;
-
-            }
-            &:hover::after{
-             right: 0;
-                width: 100%;
-                height: 100%;
-                
-            }
+           
         }
         .load-more{
             width: 50px;
@@ -533,29 +522,7 @@
                 position: absolute;
                 z-index: 9 !important;
             }
-            &::after{
-                content: 'مشاهده بیشتر';
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                background-color:#1B1462;
-                color: #fff;
-                position: absolute;
-                top: 0;
-                right: -100%;
-                transition: $transition;
-                z-index: 10;
-                border-radius: $radius-btn;
-
-            }
-            &:hover::after{
-             right: 0;
-                width: 100%;
-                height: 100%;
-                
-            }
+           
         }
     }
     .blog-posts-sidebar{
@@ -594,5 +561,24 @@
             }
         }
     }
+    }
+}
+.blog-posts-page-en{
+    direction: ltr;
+    text-align: left;
+    font-family: sans-serif !important;
+    .blog-posts-sidebar{
+
+    }
+    .blog-items-container{
+        direction: ltr;
+        .blog-item{
+            direction: ltr !important;
+            text-align: left !important;
+            .item-btn{
+                font-size: 11px !important;
+                font-family: sans-serif;
+            }
+        }
     }
 }

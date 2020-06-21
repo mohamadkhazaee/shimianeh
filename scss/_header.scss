@@ -15,6 +15,9 @@ header{
     .res-btn-toggle{
         display: none;
     }
+    .language-select{
+        display: none;
+    }
     .main-nav{
         height: 100%;
         display: flex;
@@ -166,6 +169,71 @@ header{
                     font-size: 20px;
                 }
             }
+            .language-select{
+                color: #fff;
+                font-family: "rezvan";
+                width: 55px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border: 1px solid #fff;
+                height: 30px;
+                border-radius: $radius;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all ease-in-out .3s;
+                i{
+                    color: #fff;
+                    font-size: 20px;
+                }
+                .dropdown-toggle{
+                    color: #fff;
+                    background-color: transparent;
+                    border: 0 !important;
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 !important;
+                    transition: all ease-in-out .2s;
+                    margin: 0 !important;
+                    &::after{
+                        margin-right: 5px !important;
+                    }
+                }
+                .dropdown-menu{
+                    width: 150px !important;
+                    padding: 5px 0 !important;
+                   .dropdown-item{
+                        width: 100% !important;
+                        height: 30px !important;
+                        padding: 0 10px !important;
+                        font-size: 12px !important;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center ;
+                        transition: all ease-in-out .2s;
+                        &:hover{
+                            background-color: $pcolor;
+                            color: #fff;
+                        }
+                    }
+
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: #666;
+                    transition: all ease-in-out .2s;
+                    i{
+                        color: #666;
+                    }
+                    .dropdown-toggle{
+                        color: #666;
+                    }
+                }
+                
+            }
         }
         .main-logo{
             width: 120px;
@@ -200,10 +268,11 @@ header{
         }
         .res-btn-toggle{
             display: block;
-            svg{
+            i{
                 width: 30px;
                 height: 30px;
-                fill: #fff;
+                font-size: 35px;
+                color: #fff;
             }
         }
         .transform-res-menu{
@@ -254,9 +323,74 @@ header{
                             font-size: 20px;
                         }
                 }
+                .responsive-language{
+                    color: #fff;
+                    font-family: "rezvan";
+                    width: 55px;
+                    border: 1px solid #fff;
+                    margin-top: 10px;
+                    height: 30px;
+                    border-radius: $radius;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all ease-in-out .3s;
+                    i{
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                    .dropdown-toggle{
+                        color: #fff;
+                        background-color: transparent;
+                        border: 0 !important;
+                        width: auto;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 !important;
+                        transition: all ease-in-out .2s;
+                        margin: 0 !important;
+                        &::after{
+                            margin-right: 5px !important;
+                        }
+                    }
+                    .dropdown-menu{
+                        width: 150px !important;
+                        padding: 5px 0 !important;
+                       .dropdown-item{
+                            width: 100% !important;
+                            height: 30px !important;
+                            padding: 0 10px !important;
+                            font-size: 12px !important;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center ;
+                            transition: all ease-in-out .2s;
+                            &:hover{
+                                background-color: $pcolor;
+                                color: #fff;
+                            }
+                        }
+    
+                    }
+                    &:hover{
+                        background-color: #fff;
+                        color: #666;
+                        transition: all ease-in-out .2s;
+                        i{
+                            color: #666;
+                        }
+                        .dropdown-toggle{
+                            color: #666;
+                        }
+                    }
+                    
+                }
+
             }
             position: fixed;
-            width: 80% !important;
+            width: 100vw !important;
             height: 100% !important;
             top: 0;
             right: 0;

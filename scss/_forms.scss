@@ -253,6 +253,21 @@
                 }
             }
        }
+       .form-container-en{
+        direction: ltr !important;
+        text-align: left !important;
+        font-family: sans-serif !important;
+        .dropdown-toggle{
+            &::after{
+                margin-top: 0px !important;
+            }
+        }
+        .form-header{
+            direction: ltr !important;
+        }
+       }
+
+
        .form-container2{
         width: auto;
         max-width: 1200px;
@@ -482,6 +497,21 @@
             }
         }
    }
+        .form-container2-en{
+            direction: ltr !important;
+            text-align: left !important;
+            font-family: sans-serif !important;
+            .form-col{
+                &:first-child{
+                    border-right:0 !important;
+                }
+                &:last-child{
+                    border-right:  1px solid #ccc !important;
+                }
+            }
+        }
+
+
     }
 }
 

@@ -85,4 +85,15 @@ footer{
 
 .footer-en{
     direction: ltr !important;
+    .footer-section{
+        direction: ltr !important;
+        ul{
+            direction: ltr !important;
+            padding-left: 15px !important;
+            li{
+                text-align: left !important;
+            }
+            
+        } 
+    }
 }

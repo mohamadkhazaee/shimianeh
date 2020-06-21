@@ -31,11 +31,11 @@
         }
         #menu-tabs{
             padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-bottom: none !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-bottom: none !important;
         li{
             a{
                 border: none !important;
@@ -172,6 +172,52 @@
                     }
                 }
             }
+        }
+    }
+}
+.user-pannel-en{
+    direction: ltr !important;
+    .user-pannel-menu{
+        .nav-tabs{
+            .active{
+                color: $pcolor !important;
+                font-size: 16px;
+                position: relative;
+                &::after{
+                    content: '\203A';
+                    font-family: '';
+                    font-size: 30px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -14px;
+                    right: -15px;
+                }
+            }
+        }
+        
+    }
+    .user-pannel-information{
+        font-family: sans-serif !important;
+        .info-section{
+            .title{
+                direction: ltr !important;
+                text-align: left !important;
+            }
+            .value{
+                direction: ltr !important;
+                text-align: left !important;
+            }
+        }
+    }
+    .request-records{
+        direction: ltr !important;
+        text-align: left !important;
+        .request-title-header{
+            text-align: left !important;
+            direction: ltr !important;
+        }
+        .accordion{
+            font-family: sans-serif !important;
         }
     }
 }
