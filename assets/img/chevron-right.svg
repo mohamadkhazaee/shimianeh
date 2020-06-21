@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
-  <g id="Assets" transform="translate(-8 -5)">
-    <g id="Artboard" transform="translate(-37 -18)">
-      <path id="Mask" d="M51.293-23.293a1,1,0,0,0,1.414,0,1,1,0,0,0,.083-1.32l-.083-.094L47.415-30l5.292-5.293a1,1,0,0,0,.083-1.32l-.083-.094a1,1,0,0,0-1.32-.083l-.094.083-6,6a1,1,0,0,0-.083,1.32l.083.094Z" transform="translate(98) rotate(180)" fill="#0679e4" fill-rule="evenodd"/>
-    </g>
-  </g>
-</svg>
