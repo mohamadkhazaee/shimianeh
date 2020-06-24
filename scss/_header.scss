@@ -467,7 +467,6 @@ header{
 
 .header-en{
     direction: ltr !important;
-    
     .desktop-login-btn{
         span{
             margin-top: 4px !important;
@@ -482,7 +481,7 @@ header{
                     @media screen and (min-width:779px) and (max-width:990px){
                         font-size: 10px !important;
                     }
-                    font-family: sans-serif !important;
+                  //  font-family: sans-serif !important;
                 }
                 .sub-menu{
                     width: 100%;

@@ -25,6 +25,18 @@
   font-style: normal;
   font-weight: lighter; }
 
+@font-face {
+  font-family: 'oepnsans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'oepnsans';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-style: bold;
+  font-weight: bold; }
+
 * {
   outline: none !important; }
 
@@ -665,11 +677,9 @@ header {
     direction: ltr !important; }
     .header-en .main-nav .main-menu {
       padding-left: 0 !important; }
-      .header-en .main-nav .main-menu > li > a {
-        font-family: sans-serif !important; }
-        @media screen and (min-width: 779px) and (max-width: 990px) {
-          .header-en .main-nav .main-menu > li > a {
-            font-size: 10px !important; } }
+      @media screen and (min-width: 779px) and (max-width: 990px) {
+        .header-en .main-nav .main-menu > li > a {
+          font-size: 10px !important; } }
       .header-en .main-nav .main-menu > li .sub-menu {
         width: 100%;
         padding-left: 0 !important; }

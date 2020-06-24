@@ -38,6 +38,20 @@
     font-style: normal;
     font-weight: lighter;
 }
+@font-face {
+    font-family: 'oepnsans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+   
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'oepnsans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+   
+    font-style: bold;
+    font-weight: bold;
+}
 *{
     outline: none !important;
 }
